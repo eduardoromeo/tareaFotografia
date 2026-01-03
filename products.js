@@ -1,18 +1,18 @@
 let product = null;
 
-export function createProduct(nombre,descripcion,precioFotografias,precioPromociones,categoria,marca){
+export function createProduct(nombre,descripcion,precioFotografias,precioPromociones,categoria,tipoEvento){
     product = {
         nombre:nombre,
         descripcion:descripcion,
         precioFotografias:precioFotografias,
         precioPromociones:precioPromociones,
         categoria:categoria,
-        marca:marca
+        tipoEvento:tipoEvento
     }
     return product;
 }
 
-export function updateProduct(nombre,descripcion,precioFotografias,precioPromociones,categoria,marca){
+export function updateProduct(nombre,descripcion,precioFotografias,precioPromociones,categoria,tipoEvento){
     if(product){
         return "No existe el producto";
     }
@@ -21,7 +21,7 @@ export function updateProduct(nombre,descripcion,precioFotografias,precioPromoci
         product.precioFotografias=precioFotografias,
         product.precioPromociones=precioPromociones,
         product.categoria=categoria,
-        product.marca=marca
+        product.tipoEvento=tipoEvento
     
     return product;
 }
