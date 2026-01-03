@@ -4,8 +4,8 @@ export function createProduct(nombre,descripcion,precioFotografias,precioPromoci
     product = {
         nombre:nombre,
         descripcion:descripcion,
-        precioVenta:precioFotografias,
-        precioCompra:precioPromociones,
+        precioFotografias:precioFotografias,
+        precioPromociones:precioPromociones,
         categoria:categoria,
         marca:marca
     }
